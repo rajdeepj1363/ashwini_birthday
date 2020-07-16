@@ -1,0 +1,25 @@
+body{
+  position: relative;
+  text-align: center;
+  background-image: url('../img/bg.png');
+}
+.first-block{
+
+  display: inline-block;
+  margin-top: 20vh;
+  background: yellow;
+  opacity: 0.9;
+
+}
+.first-block-content{
+  padding: 100px;
+}
+#text{
+  font-family: 'Dancing Script', cursive;
+  font-size: 35px;
+}
+img{
+  width:200px;
+  height: 200px;
+  border-radius: 100%;
+}

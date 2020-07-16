@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>Happy Birthday Ashwini!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1 id="heading"></h1>
+    <div class="first-block">
+      <div class="first-block-content">
+        <h1 id="text"></h1>
+        <img id="img1" src="img/1.png" alt="" style="display:none;">
+
+      </div>
+
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+
+  var text = document.getElementById('text');
+
+  var typewriter = new Typewriter(text, {
+
+      strings: ['Hey Ashwini','Please lay back and enjoy','Today is a special day'],
+      autoStart: true
+
+  });
+  setTimeout(function(){
+    document.querySelector(".first-block-content").style.padding = "0";
+    document.querySelector(".first-block").style.background = "none";
+    $("#text").css("display","none");
+    $("#img1").css("display","block").fadeOut(2000);
+    $("#img1").fadeIn(1500);
+    $("h1").css("color","#fff");
+
+  },19500);
+setTimeout(function(){
+  var text2 = document.getElementById('heading');
+
+  var typewriter2 = new Typewriter(text2, {
+
+      strings: ['WISH YOU A VERY HAPPY BIRTHDAY!'],
+      autoStart: true
+
+  });
+},21000)
+
+
+
+  </script>
+
+</html>
