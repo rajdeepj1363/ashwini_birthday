@@ -1,13 +1,14 @@
 body{
   position: relative;
   text-align: center;
-  background-image: url('../img/bg.png');
+  background: black;
+  /* background-image: url('../img/bg.png'); */
 }
 .first-block{
 
   display: inline-block;
   margin-top: 20vh;
-  background: yellow;
+
   opacity: 0.9;
 
 }
@@ -17,9 +18,15 @@ body{
 #text{
   font-family: 'Dancing Script', cursive;
   font-size: 35px;
+  color: yellow;
+}
+#heading{
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  color: yellow;
 }
 img{
-  width:200px;
-  height: 200px;
+  width:250px;
+  height: 250px;
   border-radius: 100%;
 }

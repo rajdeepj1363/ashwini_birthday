@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <meta charset="utf-8">
     <title>Happy Birthday Ashwini!</title>
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" href="img/favicons/favicon.ico">
+    <link rel="icon" href="/css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -16,7 +20,7 @@
       <div class="first-block-content">
         <h1 id="text"></h1>
         <img id="img1" src="img/1.png" alt="" style="display:none;">
-
+        <img id="cake" src="img/cake.gif" alt="cake" style="display:none;">
       </div>
 
     </div>
@@ -37,22 +41,28 @@
     document.querySelector(".first-block-content").style.padding = "0";
     document.querySelector(".first-block").style.background = "none";
     $("#text").css("display","none");
-    $("#img1").css("display","block").fadeOut(2000);
-    $("#img1").fadeIn(1500);
+    $("#img1").css("display","block");
+    $("#img1").hide().fadeIn(2000);
+
     $("h1").css("color","#fff");
 
   },19500);
-setTimeout(function(){
-  var text2 = document.getElementById('heading');
 
-  var typewriter2 = new Typewriter(text2, {
+  setTimeout(function(){
+    var text2 = document.getElementById('heading');
 
-      strings: ['WISH YOU A VERY HAPPY BIRTHDAY!'],
-      autoStart: true
+    var typewriter2 = new Typewriter(text2, {
 
-  });
-},21000)
+        strings: ['WISH YOU A VERY HAPPY BIRTHDAY!','THANKS FOR BEING THERE ALWAYS FOR ME','I KNOW THESE STATEMENTS REPEAT EVERY YEAR :p'],
+        autoStart: true
 
+    });
+  },21000);
+  setTimeout(function(){
+    document.getElementById("heading").style.display = "none";
+    $("#img1").css("display","none");
+    $("#cake").css("display","block").hide().fadeIn(1000);
+  },50000)
 
 
   </script>
