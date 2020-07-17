@@ -7,7 +7,7 @@ function play_birthday(){
 
   var typewriter = new Typewriter(text, {
 
-      strings: ['Hey Ashwini','Please lay back and enjoy','Today is a special day'],
+      strings: ['Hey Ashwini','Today is a special day',"I'm not good with expressing so bear with me.."],
       autoStart: true
 
   });
@@ -46,16 +46,28 @@ function play_birthday(){
     var audio = new Audio("hbd.mp3");
     audio.play();
     setTimeout(function(){
+      $("#cake").attr("src","img/gift-box.png");
       $("#gift").css("display","block");
     },17000);
   });
 
   $("#gift").click(function(){
+
     var drum = new Audio("drumroll.mp3");
     drum.play();
     $("#gift").css("display","none");
     $("#heading").html("Your favorite!!!!").hide().fadeIn(1000);
     $("#cake").attr("src","img/kfc.png").css({"width":"300px","height":"300px"}).hide().fadeIn(10000);
+    setTimeout(function(){
+      $(".first-block").css("display","none");
+      $("#heading").css("display","none");
+      bg.play();
+      $(".second-block").css("display","inline-block");
+    },12000);
 
   });
+
+  $("#msg").html("Jokes apart! What I want to say is I'm really happy to have you in my life, our 5-6 years old friendship is really some next level thing! Do whatever you want, I'll be there for you to support, don't worry about other. Be cheerful, productive and wishing you glorious years ahead!").slideUp(1500);
+  $("#msg").slideDown(3000);
+
 }

@@ -12,6 +12,18 @@ body{
   opacity: 0.9;
 
 }
+.second-block{
+  display: none;
+  margin-top:20vh;
+  opacity: 0.9;
+}
+.msg-box{
+  background: #fff;
+  width:300px;
+  height: 400px;
+  padding:10px;
+  border-radius: 5px;
+}
 .first-block-content{
   padding: 100px;
 }
@@ -43,8 +55,11 @@ img{
 
   border-radius: 100%;
 }
-#songbtn,#gift{
+#songbtn{
   margin-left: 30%;
+}
+#gift{
+  margin-left: 25%;
 }
 /* .ltr{
   color:red;
