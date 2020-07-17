@@ -14,11 +14,11 @@ body{
 }
 .second-block{
   display: none;
-  margin-top:20vh;
-  opacity: 0.9;
+  margin-top:5vh;
+
 }
 .msg-box{
-  background: #fff;
+  background-image: url("../img/4.png");
   width:300px;
   height: 400px;
   padding:10px;
@@ -26,6 +26,12 @@ body{
 }
 .first-block-content{
   padding: 100px;
+}
+.past-img{
+  width:300px;
+  height:150px;
+
+  margin-bottom: 10px;
 }
 #text{
   font-family: 'Dancing Script', cursive;
@@ -37,12 +43,20 @@ body{
   font-size: 30px;
   color: yellow;
 }
-
-img{
+#msg{
+  line-height: 1.2;
+}
+#img1{
   width:250px;
   height: 250px;
   border-radius: 100%;
 }
+#cake{
+  width:250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
 .letter{
   display: none;
   background: #fff;

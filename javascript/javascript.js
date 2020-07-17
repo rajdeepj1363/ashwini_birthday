@@ -7,7 +7,7 @@ function play_birthday(){
 
   var typewriter = new Typewriter(text, {
 
-      strings: ['Hey Ashwini','Today is a special day',"I'm not good with expressing so bear with me.."],
+      strings: ['Hey Ashwini','Today is a special day',"I'm not good at expressing so bear with me.."],
       autoStart: true
 
   });
@@ -63,11 +63,12 @@ function play_birthday(){
       $("#heading").css("display","none");
       bg.play();
       $(".second-block").css("display","inline-block");
-    },12000);
+    },10500);
 
   });
 
   $("#msg").html("Jokes apart! What I want to say is I'm really happy to have you in my life, our 5-6 years old friendship is really some next level thing! Do whatever you want, I'll be there for you to support, don't worry about other. Be cheerful, productive and wishing you glorious years ahead!").slideUp(1500);
+  $("#msg").css("color","#fff");
   $("#msg").slideDown(3000);
 
 }
