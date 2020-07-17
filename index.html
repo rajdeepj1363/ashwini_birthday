@@ -20,11 +20,13 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+
     <h1 id="heading"></h1>
 
     <div class="first-block">
       <div class="first-block-content">
-        <h1 id="text"></h1>
+        <button id="bg_music_btn" class="btn btn-dark" type="button" name="button" onclick="play_birthday()" >Let's Celebrate!</button>
+        <h1 id="text" style="display:none;"></h1>
         <img id="img1" src="img/1.png" alt="" style="display:none;">
         <img id="cake" src="img/cake.gif" alt="cake" style="display:none;"><br>
         <button id="songbtn" class="btn btn-primary" type="button" name="button" style="display:none;">Click Me!</button>
@@ -36,61 +38,7 @@
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript/javascript.js"></script>
 
-  <script>
-
-  var text = document.getElementById('text');
-
-  var typewriter = new Typewriter(text, {
-
-      strings: ['Hey Ashwini','Please lay back and enjoy','Today is a special day'],
-      autoStart: true
-
-  });
-  setTimeout(function(){
-    document.querySelector(".first-block-content").style.padding = "0";
-    document.querySelector(".first-block").style.background = "none";
-    $("#text").css("display","none");
-    $("#img1").css("display","block");
-    $("#img1").hide().fadeIn(2000);
-
-    $("h1").css("color","#fff");
-
-  },19500);
-
-  setTimeout(function(){
-    var text2 = document.getElementById('heading');
-
-    var typewriter2 = new Typewriter(text2, {
-
-        strings: ['WISH YOU A VERY HAPPY BIRTHDAY!','THANKS FOR BEING THERE ALWAYS FOR ME','I KNOW THESE STATEMENTS REPEAT EVERY YEAR :p'],
-        autoStart: true
-
-    });
-  },21000);
-  setTimeout(function(){
-    document.getElementById("heading").style.display = "none";
-    $("#img1").css("display","none");
-    $("#cake").css("display","block");
-    $("#songbtn").css("display","block");
-
-    // $(".letter").css("display","block");
-  },50000);
-  $("#songbtn").click(function(){
-    $("#songbtn").css("display","none");
-    var audio = new Audio("hbd.mp3");
-    audio.play();
-    setTimeout(function(){
-      $("#gift").css("display","block");
-    },26000);
-  });
-
-  $("#gift").click(function(){
-    $("#gift").css("display","none");
-    $("#cake").attr("src","img/kfc.png").hide().fadeIn(2500);
-
-  });
-
-  </script>
 
 </html>
