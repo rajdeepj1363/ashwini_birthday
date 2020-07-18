@@ -1,3 +1,4 @@
+alert("Hellllo! I'm glad you are here. Just a reminder don't let the browser get minimized or screen get off, inshort WATCH TILL THE END! :D");
 function play_birthday(){
   document.getElementById("bg_music_btn").style.display = "none";
   var bg = new Audio("bg-music.mp3");
@@ -39,13 +40,15 @@ function play_birthday(){
     $("#songbtn").css("display","block");
 
     // $(".letter").css("display","block");
-  },50000);
+  },51500);
   $("#songbtn").click(function(){
     bg.pause();
+
     $("#songbtn").css("display","none");
     var audio = new Audio("hbd.mp3");
     audio.play();
     setTimeout(function(){
+
       $("#cake").attr("src","img/gift-box.png");
       $("#gift").css("display","block");
     },17000);
@@ -67,7 +70,7 @@ function play_birthday(){
 
   });
 
-  $("#msg").html("Jokes apart! What I want to say is I'm really happy to have you in my life, our 5-6 years old friendship is really some next level thing! Do whatever you want, I'll be there for you to support, don't worry about other. Be cheerful, productive and wishing you glorious years ahead!").slideUp(1500);
+  $("#msg").html("Jokes apart! What I want to say is I'm really happy to have you in my life, our 5-6 years old friendship is really some next level thing! Do whatever you want, I'll be there for you to support, don't worry about others. Be cheerful, productive and wishing you glorious years ahead!<br>--Rajdeep").slideUp(1500);
   $("#msg").css("color","#fff");
   $("#msg").slideDown(3000);
 
