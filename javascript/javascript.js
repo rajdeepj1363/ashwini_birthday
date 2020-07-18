@@ -1,4 +1,4 @@
-alert("Hellllo! I'm glad you are here. Just a reminder don't let the browser get minimized or screen get off, inshort WATCH TILL THE END! :D");
+alert("Hellllo! I'm glad you are here. Just a reminder don't let the browser get minimized or screen get off, also make sure Volume is Up!, inshort ENJOY TILL THE END! :D");
 function play_birthday(){
   document.getElementById("bg_music_btn").style.display = "none";
   var bg = new Audio("bg-music.mp3");
